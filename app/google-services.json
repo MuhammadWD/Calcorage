@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "805226736018",
+    "project_id": "clever-storage",
+    "storage_bucket": "clever-storage.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:805226736018:android:c986485de6c47c8b52394b",
+        "android_client_info": {
+          "package_name": "com.gasanovmagomed.cleversafe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "805226736018-eb2qefmm3ftrj4v1urqo4b5p8hsbpj9r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnZY7fOYc-fa0DHrmdW8sH8H0U7ZgW-UQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "805226736018-eb2qefmm3ftrj4v1urqo4b5p8hsbpj9r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

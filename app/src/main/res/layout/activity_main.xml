@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_200"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/CountLable"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text=""
+        android:textColor="@color/darkSkyBlue"
+        android:gravity="end"
+        android:textSize="25sp"
+        android:ellipsize="start"
+        android:padding="10dp"
+        android:singleLine="true" />
+    <TextView
+        android:id="@+id/ResultLable"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="0"
+        android:textColor="@color/white"
+        android:gravity="end"
+        android:textSize="48sp"
+        android:ellipsize="middle"
+        android:padding="15dp"
+        android:singleLine="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/Clear"
+                style="@style/NumberBtnStyle"
+                android:background="@color/dark_700"
+                android:text="CE"
+                android:onClick="onClean"/>
+            <TextView
+                android:id="@+id/cleanOne"
+                android:background="@color/dark_700"
+                style="@style/NumberBtnStyle"
+                android:text="C"
+                android:onClick="onBack"/>
+            <TextView
+                android:id="@+id/percent"
+                android:background="@color/dark_700"
+                style="@style/NumberBtnStyle"
+                android:text="%"
+                android:onClick="showButtons"/>
+            <TextView
+                android:id="@+id/divide"
+                style="@style/ActionBtnStyle"
+                android:text="/"
+                android:onClick="showButtons"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/seven"
+                style="@style/NumberBtnStyle"
+                android:text="7"
+                android:onClick="showButtons"/>
+            <TextView
+                android:id="@+id/eight"
+                style="@style/NumberBtnStyle"
+                android:text="8"
+                android:onClick="showButtons"/>
+            <TextView
+                android:id="@+id/nine"
+                style="@style/NumberBtnStyle"
+                android:text="9"
+                android:onClick="showButtons"/>
+            <TextView
+                android:id="@+id/multiple"
+                style="@style/ActionBtnStyle"
+                android:text="X"
+                android:onClick="showButtons"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/four"
+                style="@style/NumberBtnStyle"
+                android:text="4"
+                android:onClick="showButtons"/>
+            <TextView
+                android:id="@+id/five"
+                style="@style/NumberBtnStyle"
+                android:text="5"
+                android:onClick="showButtons"/>
+            <TextView
+                android:id="@+id/six"
+                style="@style/NumberBtnStyle"
+                android:text="6"
+                android:onClick="showButtons"/>
+            <TextView
+                android:id="@+id/plus"
+                style="@style/ActionBtnStyle"
+                android:text="+"
+                android:onClick="showButtons"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/one"
+                style="@style/NumberBtnStyle"
+                android:text="1"
+                android:onClick="showButtons"/>
+            <TextView
+                android:id="@+id/two"
+                style="@style/NumberBtnStyle"
+                android:text="2"
+                android:onClick="showButtons"/>
+            <TextView
+                android:id="@+id/three"
+                style="@style/NumberBtnStyle"
+                android:text="3"
+                android:onClick="showButtons"/>
+            <TextView
+                android:id="@+id/minus"
+                style="@style/ActionBtnStyle"
+                android:text="—"
+                android:onClick="showButtons"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/changer"
+                style="@style/NumberBtnStyle"
+                android:text="+/-"
+                android:onClick="onChangerClicked"/>
+            <TextView
+                android:id="@+id/zero"
+                style="@style/NumberBtnStyle"
+                android:text="0"
+                android:onClick="showButtons"/>
+            <TextView
+                android:id="@+id/dot"
+                style="@style/NumberBtnStyle"
+                android:text=","
+                android:onClick="showButtons"/>
+            <TextView
+                android:id="@+id/Equals"
+                style="@style/ActionBtnStyle"
+                android:text="="
+                android:onClick="onEquals"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

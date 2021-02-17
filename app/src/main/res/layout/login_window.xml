@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="60dp"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:paddingBottom="15dp"
+        android:layout_marginBottom="20dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/second_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:paddingBottom="15dp"
+        android:hint="String password"
+        android:inputType="textPassword"
+        android:text=""/>
+
+    <TextView
+        android:id="@+id/forgotPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/lightRead"
+        android:text="@string/forgot"
+        android:gravity="center"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

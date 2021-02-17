@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="NumberBtnStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@color/dark_500</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">0.5dp</item>
+        <item name="android:radius">10dp</item>
+    </style>
+    <style name="ActionBtnStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@color/darkSkyBlue</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+</resources>
