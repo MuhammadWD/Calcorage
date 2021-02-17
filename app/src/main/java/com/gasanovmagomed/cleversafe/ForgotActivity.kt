@@ -13,10 +13,7 @@ import com.google.firebase.auth.FirebaseAuth
 class ForgotActivity : AppCompatActivity() {
 
     private lateinit var auth: FirebaseAuth
-    private lateinit var usersPassword: String
     private lateinit var inputEmail: EditText;
-    private lateinit var prefs: SharedPreferences
-    private val savedPassword = "passwords"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

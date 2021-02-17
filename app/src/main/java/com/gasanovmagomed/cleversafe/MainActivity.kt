@@ -51,7 +51,6 @@ class MainActivity : AppCompatActivity() {
     @SuppressLint("CommitPrefEdits")
     override fun onPause() {
         super.onPause()
-        //auth.signOut()
         val editor = prefs.edit()
         editor.putString(savedUserPin, userPin).apply()
     }

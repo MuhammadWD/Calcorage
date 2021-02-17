@@ -1,7 +1,7 @@
 package com.gasanovmagomed.cleversafe
 
+import android.content.Intent
 import android.os.Bundle
-import android.view.View
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
@@ -23,5 +23,13 @@ class StorageActivity : AppCompatActivity() {
                 R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications))
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
+    }
+
+    override fun onRestart() {
+        super.onRestart()
+        val intent = Intent(this, MainActivity::class.java)
+        startActivity(intent)
+        finish()
     }
 }

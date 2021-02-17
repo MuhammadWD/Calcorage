@@ -12,15 +12,11 @@ import com.gasanovmagomed.cleversafe.R
 
 class DashboardFragment : Fragment() {
 
-    private lateinit var dashboardViewModel: DashboardViewModel
-
     override fun onCreateView(
             inflater: LayoutInflater,
             container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View? {
-        dashboardViewModel =
-                ViewModelProvider(this).get(DashboardViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_dashboard, container, false)
         return root
     }
